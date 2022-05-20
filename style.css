@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: white;
+    --base-color: 194;
+    --bg-primary-light:hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 11%, 22%);
+    --card-press: hsl(var(--base-color), 2%,90%);
+    --text-color: #121214;
+
+    font-size: 62.5%
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-family: 'Roboto', 'sans serif';
+    font-weight: bold;
+    display: grid;
+    min-height: 100vh;
+    
+}
+
+#clock {
+    font-size: clamp(14rem, 16rem + 10vw, 10.8rem);
+
+    display: flex;
+    margin-bottom: 1.6rem;
+    align-items: center;
+}
+
+.timer{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    
+}
+
+.timer{
+    padding-right:19.2rem;
+}
+
+.card-master div:nth-child(1) {
+    grid-area: A
+}
+
+.card-master div:nth-child(2) {
+    grid-area: B
+}
+
+.card-master div:nth-child(3) {
+    grid-area: C
+}
+
+.card-master div:nth-child(4) {
+    grid-area: D
+}
+
+.hide {
+    display: none;
+}
+
+.chagebody{
+    background-color:black;
+    color:white;
+}
+
+.changeButtons svg path {
+    fill:white;
+}
+
+.changeButtonsCards svg path {
+    fill:black;
+}
+
+.changeButtonsModeLight {
+    position: fixed;
+    
+    top:6.0rem;
+    
+    right:6.0rem;
+}
+
+#controls {
+
+    /*background-color: var(--bg-primary-light);*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+    border-radius: 9999px;
+
+
+
+    width: clamp(8rem, 8rem + 10w, 10.8rem);
+    height: clamp(8rem, 5rem + 10vh, 10.8rem);
+
+}
+
+.card {
+
+    position: relative;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.card-wrapper {
+
+    height: 15.2rem;
+    width: 13.8rem;
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    background-color: var(--card-press);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding-top:5rem;
+}
+
+.card-wrapperNight {
+
+    height: 15.2rem;
+    width: 13.8rem;
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    background-color: #29292E;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding-top:5rem;
+}
+
+.card-wrapperNight:hover{
+    background:#02799D;
+}
+
+
+.card-wrapper 
+.forest svg path,
+.rain svg path,
+.house svg path,
+.fire svg path {
+
+    fill:white;
+}
+
+.card-wrapper:hover{
+    background:#02799D;
+}
+
+.card-master {
+    display: grid;
+    gap: 3.2rem;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "A B"
+        "C D";
+   
+
+}
+
+
+button {
+   background:transparent;
+    border: none;
+    cursor: 
+    pointer;
+}
+
+.play svg path,
+.pause svg path,
+.plus svg path,
+.less svg path,
+.stop svg path,
+.set svg path{
+    fill: var(--primary-color);
+}
+
+.mode svg path {
+    fill:black;
+}
+
+.mode {
+    position: fixed;
+    
+    top:6.0rem;
+    
+    right:6.0rem;
+    
+
+}
+
+
+
+buttons svg {
+    width:clamp(3.2rem,6.4rem, 2rem +12vw,6.4rem);
+    
+}
