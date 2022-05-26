@@ -60,32 +60,11 @@ body}) {
       buttonLess.setAttribute("class", "less");
       buttonLess.setAttribute("class", buttonPlus.getAttribute("class") + " svg path");
 
-      /*buttonForest.classList.remove("forest", "svg", "path");
-      buttonForest.classList.add("svg","path")
-      buttonForest.setAttribute("class", "forest");
-      buttonForest.setAttribute("class", buttonForest.getAttribute("class") + " svg path");
-
-      buttonRain.classList.remove("rain", "svg", "path");
-      buttonRain.classList.add("svg","path")
-      buttonRain.setAttribute("class", "rain");
-      buttonRain.setAttribute("class", buttonRain.getAttribute("class") + " svg path");
-
-      buttonHouse.classList.remove("house", "svg", "path");
-      buttonHouse.classList.add("svg","path")
-      buttonHouse.setAttribute("class", "house");
-      buttonHouse.setAttribute("class", buttonHouse.getAttribute("class") + " svg path");
-
-      buttonFire.classList.remove("fire", "svg", "path");
-      buttonFire.classList.add("svg","path")
-      buttonFire.setAttribute("class", "fire");
-      buttonFire.setAttribute("class", buttonFire.getAttribute("class") + " svg path");
-*/
       buttonMode.classList.remove("mode", "svg", "path");
       buttonMode.classList.add("svg","path")
       buttonMode.setAttribute("class", "mode");
       buttonMode.setAttribute("class", buttonMode.getAttribute("class") + " svg path");
-     // buttonMode.classList.add("mode")
-
+     
      for(var i in cardForestDisplay){
       cardForestDisplay[i].classList.add("card-wrapper");
       cardForestDisplay[i].classList.remove("card-wrapperNight")
@@ -117,27 +96,6 @@ body}) {
       buttonLess.classList.add("svg","path")
       buttonLess.setAttribute("class", "changeButtons");
       buttonLess.setAttribute("class", buttonLess.getAttribute("class") + " svg path");
-
-      /*buttonForest.classList.add("changeButtonsCards")
-      buttonForest.classList.add("svg","path")
-      buttonForest.setAttribute("class", "changeButtonsCards");
-      buttonForest.setAttribute("class", buttonForest.getAttribute("class") + " svg path");
-
-      buttonRain.classList.add("changeButtonsCards")
-      buttonRain.classList.add("svg","path")
-      buttonRain.setAttribute("class", "changeButtonsCards");
-      buttonRain.setAttribute("class", buttonRain.getAttribute("class") + " svg path");
-
-      buttonHouse.classList.add("changeButtonsCards")
-      buttonHouse.classList.add("svg","path")
-      buttonHouse.setAttribute("class", "changeButtonsCards");
-      buttonHouse.setAttribute("class", buttonHouse.getAttribute("class") + " svg path");
-
-      buttonFire.classList.add("changeButtonsCards")
-      buttonFire.classList.add("svg","path")
-      buttonFire.setAttribute("class", "changeButtonsCards");
-      buttonFire.setAttribute("class", buttonFire.getAttribute("class") + " svg path");*/
-
       
       buttonMode.classList.remove("mode", "svg", "path");
       buttonMode.classList.add("changeButtonsModeLight")
